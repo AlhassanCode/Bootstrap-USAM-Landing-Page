@@ -1,0 +1,81 @@
+.gradient-background {
+  background: linear-gradient(300deg, #b600ed, #9dd5f4, #ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+
+    .testimonial-card {
+      flex: 0 0 50%;
+    }
+  }
+
+  .card {
+    width: 100% !important;
+  }
+}
+
+.testimonial-card {
+  text-align: center;
+  margin: 1rem;
+}
+.testimonial-img {
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.testimonials-container {
+  display: flex;
+  overflow-x: auto;
+}
+@media (max-width: 1200px) {
+  .testimonial-card {
+    flex: 0 0 20%;
+  }
+}
+@media (max-width: 992px) {
+  .testimonial-card {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    flex: 0 0 100%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.trusted-by img {
+  max-width: 100%;
+  height: auto;
+}
